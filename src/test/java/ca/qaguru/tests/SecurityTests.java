@@ -1,8 +1,10 @@
-package ca.qaguru;
+package ca.qaguru.tests;
 
+import ca.qaguru.lib.TestBase;
+import com.aventstack.extentreports.Status;
 import org.testng.annotations.*;
 
-public class SecurityTests {
+public class SecurityTests extends TestBase {
     @BeforeMethod
     public void beforeMethod(){
         System.out.println("BeforeMethod in SecurityTests");

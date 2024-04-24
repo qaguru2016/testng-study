@@ -1,8 +1,10 @@
-package ca.qaguru;
+package ca.qaguru.tests;
 
+import ca.qaguru.lib.TestBase;
+import com.aventstack.extentreports.Status;
 import org.testng.annotations.*;
 
-public class FunctionalTests {
+public class FunctionalTests extends TestBase {
     @BeforeSuite
     public void beforeSuite(){
         System.out.println("BeforeSuite in FunctionalTests");
@@ -41,6 +43,7 @@ public class FunctionalTests {
     @Test
     public void funcTest1(){
         System.out.println("funcTest1");
+        log(Status.PASS, "funcTest1");
     }
     @Test
     public void funcTest2(){

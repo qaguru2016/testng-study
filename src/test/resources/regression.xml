@@ -3,8 +3,8 @@
 <suite name="QAGuruSuite" verbose="1" >
     <test name="Regression">
         <classes>
-            <class name="ca.qaguru.FunctionalTests"/>
-            <class name="ca.qaguru.SecurityTests"/>
+            <class name="ca.qaguru.tests.FunctionalTests"/>
+            <class name="ca.qaguru.tests.SecurityTests"/>
         </classes>
     </test>
 </suite>
