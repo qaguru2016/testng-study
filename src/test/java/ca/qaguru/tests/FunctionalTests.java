@@ -2,6 +2,8 @@ package ca.qaguru.tests;
 
 import ca.qaguru.lib.TestBase;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.service.ExtentTestManager;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class FunctionalTests extends TestBase {
@@ -30,7 +32,10 @@ public class FunctionalTests extends TestBase {
     }
     @Test
     public void funcTest2(){
+        log(Status.INFO,"funcTest2 started");
         System.out.println("funcTest2");
+        log(Status.INFO,"funcTest2 ended");
+        Assert.assertEquals(10,10,"Numbers dont match");
     }
     @Test
     public void funcTest3(){
