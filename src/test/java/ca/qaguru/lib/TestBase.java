@@ -18,8 +18,9 @@ public class TestBase {
     }
     @Parameters({"browser"})
     @BeforeClass
-    protected void beforeClass(String browser){
-        System.out.println("Before class " + browser);
+    protected void beforeClass(@Optional("chrome") String browser){
+        System.out.println("Before class ");
+        System.out.println("Browser : " + browser);
         this.browser = browser;
     }
     @AfterClass
@@ -29,7 +30,7 @@ public class TestBase {
 
     @BeforeTest
     protected void beforTest(){
-        System.out.println("Before Test :");
+        System.out.println("Before Test");
     }
     @AfterTest
     protected void afterTest(){
